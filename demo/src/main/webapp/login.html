@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+    <h2>Đăng nhập</h2>
+    <form action="login" method="post">
+        <label for="username">Name: </label>
+        <input type="text" id="username" name="username"><br><br>
+        <label for="password">Pass: </label>
+        <input type="password" id="password" name="password"><br><br>
+        <label for="authType">Chọn phương thức: </label>
+        <input type="radio" id="session" name="authType" value="session" checked>
+        <label for="session">Session</label>
+        <input type="radio" id="cookie" name="authType" value="cookie">
+        <label for="cookie">Cookie</label><br><br>
+        <input type="submit" value="Đăng nhập">
+        <input type="button" value="Quay lại Trang chủ" onclick="window.location.href='index.html'">
+        <input type="button" value="Đọc Cookie" onclick="window.location.href='readcookie'">
+    </form>
+</body>
+</html>
